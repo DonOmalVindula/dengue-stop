@@ -3,7 +3,7 @@ import {
 MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse,
 MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem, MDBIcon
 } from "mdbreact";
-import { Route, Link, BrowserRouter as Router } from 'react-router-dom';
+import { Route, BrowserRouter as Router } from 'react-router-dom';
 import Home from '../home/Home';
 import PatientList from '../patientList/PatientList';
 import Maps from "../maps/Maps";
@@ -20,7 +20,7 @@ toggleCollapse = () => {
 render() {
   return (
     <Router>
-      <MDBNavbar color="default-color" dark expand="md">
+      <MDBNavbar color="unique-color-dark" dark expand="md">
         <MDBNavbarBrand>
           <strong className="white-text">Dengue Stop</strong>
         </MDBNavbarBrand>
@@ -31,10 +31,10 @@ render() {
               <MDBNavLink to="/home">Home</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
-              <MDBNavLink to="/map">Dengue Map</MDBNavLink>
+              <MDBNavLink to="/map">Metrics</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
-              <MDBNavLink to="/patientList">Patient List</MDBNavLink>
+              <MDBNavLink to="/patientList">Patients</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
               <MDBNavLink to="#!"></MDBNavLink>
